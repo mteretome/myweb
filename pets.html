@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---meta charset="UTF-8--->
+    <title> Slide show with buttons</title>
+    <script>
+        var i =0; //start point
+        var flowers = [];
+        flowers[0] = 'f1';
+        flowers[1] = 'f2';
+        flowers[2] = 'f3';
+        flowers[3] = 'f4';
+        flowers[4] = 'f5';
+        flowers[5] = 'f6';
+        flowers[6] = 'f7';
+        flowers[7] = 'f8';
+        flowers[8] = 'f9';
+        flowers[9] = 'f10';
+        flowers[10] = 'f11';
+        flowers[11] = 'f12';
+        flowers[12] = 'f13';
+        flowers[13] = 'f14';
+        flowers[14] = 'f15';
+
+        function nextPic(){
+            if (i==14){
+                i=0;
+                document.getElementById(flowers[14]).border=1;
+            } else {
+                i = i + 1;
+                document.getElementById(flowers[i-1]).border=1;
+            }
+
+            document.getElementById('largeImage').src= document.getElementById(flowers[i]).src;
+            document.getElementById('displayName').value= 'flower ' +i;
+            document.getElementById(flowers[i]).border=5;
+
+
+        }
+
+        function prevPic(){
+            if (i==0){
+                i=14;
+                document.getElementById(flowers[0]).border=1;
+            } else {
+                i = i - 1;
+                document.getElementById(flowers[i+1]).border=1;
+            }
+
+            document.getElementById('largeImage').src= document.getElementById(flowers[i]).src;
+            document.getElementById('displayName').value= 'flower ' +i;
+            document.getElementById(flowers[i]).border=5;
+
+
+        }
+
+
+
+    </script>
+    <style>
+        
+    body{
+        background-image: url("images/source.gif") ;
+        color: red;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+    .img{
+        object-fit: cover;
+    }
+
+    .img-main{
+        box-shadow: 0px 0px 10px pink;
+    }
+    .button{
+        border-color:red;
+        border:0px;
+        color:white;
+        background-color: red;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+    }
+    .button:hover{
+        background-color:pink;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        color:red;
+    }
+
+    </style>
+</head>
+<body>
+
+<!---
+  Modify the slideshow problem given above such that it is not an automatic slideshow of images.
+     Instead the user should be able to view images one by one.
+     That is, remove the dropdown box for the speed. Instead, have two buttons called "Next" and "Previous".
+     If the user clicks the "Next" button, show the next image.
+     Similary if the user clicks the "Previous" button, show the previous image.
+     If the current image being shown is the last image, and the user clicks the "Next" button, start all over and show the first image.
+      Similarly, if the current image being shown is the first image, and the user clicks the "Previous" button, show the last image.
+      Update the caption corresponding to the image in the text box. Use the same set of images that you use for the first problem.
+
+    Note: If you wish, you can use two small images (like right arrow and left arrow) in place of the "Next" and "Previous" buttons, respectively.
+
+--->
+<form>
+
+    <center>
+
+        <h1> The loves of my life </h1>
+        <img class="img img-main" src="images/ship.jpg" width="450" height="500" border="1" id = "largeImage" />
+        </br>
+        </br>
+        <button class="button" id = "prv" value="Previous" type="button" onclick="prevPic()">Previous</button>
+
+        Caption:
+        <input type="text" id="displayName" value="flower 0" readonly>
+        <button class="button" id = "nxt" value="Next" type="button" onclick="nextPic()">Next</button>
+        </br>
+        </br>
+        <img class="img" src="images/ship.jpg" width="70" height="70" border="5" id = "f1"/>
+        <img class="img" src="images/crew.jpg" width="70" height="70" border="1" id = "f2" />
+        <img class="img" src="images/mitzi.jpg" width="70" height="70" border="1" id = "f3"/>
+        <img class="img"src="flowers4.jpg" width="70" height="70" border="1" id = "f4"/>
+        <img class="img" src="flowers5.jpg" width="70" height="70" border="1" id = "f5"/>
+        </br>
+        <img class="img" src="flowers6.jpg" width="70" height="70" border="1" id = "f6" />
+        <img class="img" src="flowers7.jpg" width="70" height="70" border="1" id = "f7" />
+        <img class="img" src="flowers8.jpg" width="70" height="70" border="1" id = "f8" />
+        <img class="img" src="flowers9.jpg" width="70" height="70" border="1" id = "f9" />
+        <img class="img" src="flowers10.jpg" width="70" height="70" border="1" id = "f10" />
+        </br>
+        <img class="img" src="flowers11.jpg" width="70" height="70" border="1" id = "f11" />
+        <img class="img" src="flowers12.jpg" width="70" height="70" border="1" id = "f12" />
+        <img class="img" src="flowers13.jpg" width="70" height="70" border="1" id = "f13" />
+        <img class="img" src="flowers14.jpg" width="70" height="70" border="1" id = "f14" />
+        <img class="img" src="flowers15.jpg" width="70" height="70" border="1" id = "f15" />
+    </center>
+</form>
+
+
+</body>
+</html>
