@@ -1,3 +1,9 @@
+body{
+	background-image: url("images/cloud.gif")
+	/*image from http://rebloggy.com/post/cute-kawaii-space-stars-pink-pastel-star-planets-planet-pixel-art-pixel-pixels-t/83353503647*/
+	/*background-image: linear-gradient(#D4B0BC, #AFD4E9);*/
+
+}
 .header-decor{
 	width:30px; 
 	height:35px;
@@ -20,17 +26,19 @@
 }
 
 .navbar-custom{
-	background-color: #8477A6;
+	/*background-image: linear-gradient(#D4B0BC, #AFD4E9);*/
+	background-color: #D699B4;
 	box-shadow: 0px 0px 30px #B1A9C7;
 	
 }
 
 .biopic:hover{
-	box-shadow: 0px 0px 30px #D699B4;
+	box-shadow: 0px 0px 30px #B1A9C7;
 }
 
 .col-about:hover{
-	box-shadow: 0px 0px 30px #B1A9C7;
+	
+	box-shadow: 0px 0px 30px #D699B4;
 }
 
 .row-about{
@@ -50,10 +58,18 @@
 	margin-right: 10px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	border-radius: 60px;
 	box-shadow: 0px 0px 30px #dedede;
 	
+
+}
+
+.col-side{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 
 }
