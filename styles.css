@@ -2,7 +2,6 @@ body{
 	background-image: url("images/cloud.gif")
 	/*image from http://rebloggy.com/post/cute-kawaii-space-stars-pink-pastel-star-planets-planet-pixel-art-pixel-pixels-t/83353503647*/
 	/*background-image: linear-gradient(#D4B0BC, #AFD4E9);*/
-
 }
 .header-decor{
 	width:30px; 
@@ -77,6 +76,29 @@ body{
 .footer{
 	background-color: #AFD4E9; 
 	margin-top: 20px
-	position:absolute;
-	bottom:0;
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+ 	width: 100%;
+	}
+
+
+#main{
+	padding-bottom:70px;
+}
+
+#fa-hover:hover{
+	color:#BF5F8A;
+}
+
+#fa-hover{
+	 color:#A094C7;
+}
+
+a {
+	 color:#A094C7;
+}
+
+a:hover{
+	color:#AFD4E9;
 }
