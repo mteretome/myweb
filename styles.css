@@ -27,8 +27,8 @@ body{
 
 .navbar-custom{
 	/*background-image: linear-gradient(#D4B0BC, #AFD4E9);*/
-	background-color: #D699B4;
-	box-shadow: 0px 0px 30px #B1A9C7;
+	background-color: #8FC2E0;
+	box-shadow: 0px 0px 20px #AFD4E9;
 	
 }
 
@@ -72,4 +72,11 @@ body{
 	padding-top: 40px;
 	padding-bottom: 40px;
 
+}
+
+.footer{
+	background-color: #AFD4E9; 
+	margin-top: 20px
+	position:absolute;
+	bottom:0;
 }
