@@ -32,7 +32,7 @@ body{
 }
 
 .biopic:hover{
-	box-shadow: 0px 0px 30px #B1A9C7;
+	box-shadow: 0px 0px 30px #8FC2E0;
 }
 
 .col-about:hover{
@@ -40,13 +40,14 @@ body{
 	box-shadow: 0px 0px 30px #D699B4;
 }
 
-.row-about{
-	width: 60%
+.webpic{
+	width: 450px;
+	height: auto;
 	
 }
 
 .webpic:hover{
-	box-shadow: 0px 0px 8px #D699B4;
+	box-shadow: 0px 0px 8px #8FC2E0;
 }
 
 .col{
