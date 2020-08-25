@@ -101,7 +101,7 @@ body{
 }
 
 #fa-hover:hover{
-	color:#BF5F8A;
+	color:#AFD4E9;
 }
 
 #fa-hover{
@@ -114,4 +114,34 @@ a {
 
 a:hover{
 	color:#AFD4E9;
+}
+
+.resume-h5{
+	color:#AFD4E9;
+	margin-top: 10px;
+}
+
+.hr-custom{
+	height:2px;
+	border-width:0;
+	color:#8c8c8c;
+	background-color:#8c8c8c;
+	margin-top: -6px;
+
+}
+
+.side-info{
+	color:#AFD4E9;
+	font-weight: lighter;
+	float:right;
+	padding-left: 5px;
+
+}
+.side-info2{
+	color:#8c8c8c;
+	font-style:italic;
+}
+
+#invisible{
+	color:#f8f9fa;
 }
