@@ -112,11 +112,11 @@ body{
 
 }
 
-a {
+a,.link-custom {
 	 color:#A094C7;
 }
 
-a:hover{
+a:hover, .link-custom:hover{
 	color:#AFD4E9;
 }
 
@@ -139,6 +139,7 @@ a:hover{
 	font-weight: lighter;
 	float:right;
 	padding-left: 5px;
+	text-align:right;
 
 }
 .side-info2{

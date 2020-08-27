@@ -14,7 +14,14 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="styles.css">
        <script src="https://kit.fontawesome.com/c101ad3555.js" crossorigin="anonymous"></script>
-      <script src="script.js"></script>
+      <script>
+      	function alert(){
+      		if(window.confirm('if you attempt to view while signed in to your uni email, you will likely not be able to access this page, press ok if you still want to try to access the page')){
+      			window.location.href ="https://sites.google.com/view/mtt2130art/home"
+      		}
+      	}
+
+      </script>
   		<title>About Me</title>
 	</head>
 <body>
@@ -64,7 +71,7 @@
 				Hi, my name is Maria Teresa! <br>
 				I am a junior from Honduras at Columbia University majoring in Computer Science.</br>
 				 This is a fun website I put together to show some of my interests and works. 
-				<br>Feel free to contact me!
+				<br>Feel free to <a href="contact.html">contact me!</a>
 
 			</h5>
 		</div>
@@ -72,7 +79,7 @@
 	</div>
 
 	<div class="row mx-auto d-block justify-content-center row-about">
-		<div class="col  dxb col-about bg-light">
+		<div class="col mx-auto d-block col-about bg-light">
 			
 			<h3 class="text-center"><img class="header-decor" alt="star"src="images/star.gif">Currently<img alt="star"class="header-decor" src="images/star.gif"></h3>
 			<h5 class="font-weight-light font-italic">
@@ -92,7 +99,7 @@
           </li>
 
           <li><span class="fa-li"><i id="invisible" class="fas fa-code"></i></span>
-           <b>Interested </b>
+           <b>Interested in</b>
 
           </li><li><span class="fa-li"><i id="invisible" class="fas fa-graduation-cap"></i></span>
           <b> Art  </b> 
@@ -114,7 +121,7 @@
            Inuyasha & Psycho Pass
           </li>
 
-          <li><span class="fa-li" style="padding-right: 5px;"><i id="fa-hover" class="fas fa-heart"></i></span>
+          <li><span class="fa-li" style="padding-right: 5px;"><i id="fa-hover" class="fas fa-gamepad"></i></span>
            Apex Legends & Spiderman for PS4
           </li>
 
@@ -123,7 +130,7 @@
           </li>
 
            <li><span class="fa-li" style="padding-right: 5px;"><i id="fa-hover" class="fas fa-palette"></i></span>
-           Check out my (not regularly updated)<a href=" https://sites.google.com/view/mtt2130art/home">art portfolio!</a>
+           Check out my <b>old</b> <i class="link-custom" onclick="alert();">art portfolio!</i>
           </li>
 
 
