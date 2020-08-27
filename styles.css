@@ -1,7 +1,7 @@
 body{
 	/*background-image: url("images/cloud.gif")*/
 	/*image from http://rebloggy.com/post/cute-kawaii-space-stars-pink-pastel-star-planets-planet-pixel-art-pixel-pixels-t/83353503647*/
-	background-image: linear-gradient(#A094C7, #EEAAB0);
+	background-image: linear-gradient( #A094C7, #EEAAB0);
 }
 .header-decor{
 	width:30px; 
