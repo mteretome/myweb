@@ -5,11 +5,21 @@
     <title> for my sisters </title>
    
     <style>
+        html{
+        min-height: 100%;
+
+        }
         
     body{
-        background-image: url("images/source.gif") ;
         color: red;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
+        margin:auto;
+        max-width: fit-content;
+        padding-top: 2em;
+        min-height: 100%;
+
+        background-image: linear-gradient(  #fcd2d6,#c794af);
+
     }
     .img{
         object-fit: cover;
@@ -46,6 +56,11 @@
         width:300px; 
         height:auto;
     }
+    .title{
+        margin:auto;
+        max-width: fit-content;
+     
+    }
 
     </style>
 </head>
@@ -54,7 +69,7 @@
 
 
     <div class="container">
-        <h1> i love my sisters & fam</h1>
+        <h1 class="title"> i love my sisters & fam</h1>
          <img class="img img-main" src="images/sisters.jpg" width="450" height="500" border="1" id = "largeImage" />
           <img class="img img-main" src="images/fam.jpg" width="450" height="500" border="1" id = "largeImage" />
       
